@@ -1,12 +1,24 @@
 # CyberSecure Cloud Solutions Database
 
-A Microsoft SQL Server project that models clients, accounts, cloud-service subscriptions, billing, and cybersecurity incidents for a fictional managed-services provider.
+A Microsoft SQL Server portfolio project covering relational database modelling, normalization, ERD development, implementation, stored procedures, views, triggers, and testing.
 
-## Assessment result
+## Assessment results
 
-**Grade: 100/100**
+Both stages of this INFO601 project received full marks.
 
-The assessment received full marks across table design, keys and relationships, data types, data population, views, stored procedures, triggers, and testing evidence.
+### Assessment 1 - Data Modelling
+
+**Grade: 100/100**  
+**Graded: 1 June 2026**
+
+> Excellent understanding of ERD shown in your assignment. Each section is well explained.
+
+The design report covers entity and attribute identification, primary and foreign keys, relationship cardinality, normalization through Third Normal Form, indexing strategies, an entity-relationship diagram, and draft data-entry forms.
+
+### Assessment 2 - Advanced SQL
+
+**Grade: 100/100**  
+**Graded: 11 June 2026**
 
 > Excellent creation of Views, stored procedures and Triggers. Each section is validated with screenshots so well done.
 
@@ -23,11 +35,13 @@ The assessment received full marks across table design, keys and relationships, 
 
 - Six related tables: clients, accounts, services, subscriptions, billing, and cybersecurity incidents
 - Primary and foreign keys enforcing one-to-many relationships
+- Account-to-service many-to-many relationship resolved through subscriptions
+- Normalized relational design through 3NF
 - Check, unique, default, and positive-value constraints
 - Indexes supporting common account, subscription, billing, and incident queries
 - Four views for client accounts, subscribed services, billing, and incident reporting
-- Stored procedures for inserting clients, updating accounts, and deleting incidents
-- Triggers that maintain account modification dates and prevent deletion of clients with active accounts
+- Stored procedures for inserting, updating, and deleting records
+- Triggers that maintain account modification dates and enforce business rules
 - Seed data for testing and demonstration
 
 ## Repository files
@@ -36,9 +50,10 @@ The assessment received full marks across table design, keys and relationships, 
 |---|---|
 | [01_Create_Populate.sql](01_Create_Populate.sql) | Creates the database, tables, constraints, indexes, and sample data |
 | [02_Views_Procedures_Triggers.sql](02_Views_Procedures_Triggers.sql) | Creates reporting views, CRUD procedures, and business-rule triggers |
-| [Assessment report](docs/Tirth_Patel_INFO601_Assessment2_Report.pdf) | Contains implementation and testing evidence with screenshots |
+| [Assessment 1 - Data Modelling report](docs/Tirth_Patel_INFO601_Assessment1_Data_Modelling_Report.pdf) | Documents the ERD, relationships, normalization, indexing, and proposed forms |
+| [Assessment 2 - Advanced SQL report](docs/Tirth_Patel_INFO601_Assessment2_Report.pdf) | Contains implementation and testing evidence with screenshots |
 
-## Running the project
+## Running the SQL implementation
 
 Requirements:
 
@@ -55,6 +70,6 @@ The first script creates and selects `CyberSecureCloudSolutionsDB`. The second s
 
 ## Project context
 
-This project was completed for INFO601 Assessment 2: Data Modelling and SQL. The public report has the student ID removed for privacy while preserving the assessment evidence.
+This repository combines the design and implementation stages of the INFO601 Data Modelling and SQL project. The Assessment 2 public report has its student ID removed for privacy; the Assessment 1 report did not contain a numeric student ID.
 
 No open-source license is applied because this repository is an academic portfolio submission.
